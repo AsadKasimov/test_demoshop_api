@@ -1,5 +1,5 @@
 import pytest
-from selene import browser
+from selene.support.shared import browser
 from utils.base_session import demoshop
 
 
