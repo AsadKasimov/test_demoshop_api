@@ -1,7 +1,8 @@
 from selene import have
-from utils.base_session import demoshop
+from utils.base_session import demoshop, LogsOfRequestsInConsole
 
 
+@LogsOfRequestsInConsole()
 def test_login():
     response = demoshop.post('/login', data={'Email': 'test@qa.guru.com', 'Password': '123456'}, allow_redirects=False)
     assert response.status_code == 302
@@ -17,6 +18,7 @@ def test_delete_cart(register):
     resource = demoshop.post('/addproducttocart/catalog/31/1/1')
     register.element('.ico-cart').click()
     register.element('.qty-input').clear().send_keys(0).press_enter()
+    assert resource.status_code == 200
 
 
 def test_computers(register):
