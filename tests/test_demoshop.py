@@ -1,8 +1,7 @@
 from selene import have
-from utils.base_session import demoshop, LogsOfRequestsInConsole
+from utils.base_session import demoshop
 
 
-@LogsOfRequestsInConsole()
 def test_login():
     response = demoshop.post('/login', data={'Email': 'test@qa.guru.com', 'Password': '123456'}, allow_redirects=False)
     assert response.status_code == 302
