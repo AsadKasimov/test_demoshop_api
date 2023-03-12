@@ -12,6 +12,7 @@ def load_env():
     load_dotenv()
 @pytest.fixture(scope='session')
 def register():
+    load_dotenv()
     options = Options()
     selenoid_capabilities = {
         "browserName": "chrome",
