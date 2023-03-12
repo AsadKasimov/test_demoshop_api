@@ -10,6 +10,8 @@ from dotenv import load_dotenv
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
     load_dotenv()
+
+
 @pytest.fixture(scope='function')
 def register():
     load_dotenv()
@@ -30,6 +32,20 @@ def register():
         options=options)
     browser.config.driver = driver
 
+    browser.config.base_url = "https://demowebshop.tricentis.com/"
+    browser.config.window_width = 1920
+    browser.config.window_height = 1080
+    response = demoshop.post('/login', data={'Email': 'test@qa.guru.com', 'Password': '123456'}, allow_redirects=False)
+    authorization_cookie = response.cookies.get("NOPCOMMERCE.AUTH")
+    browser.open("Themes/DefaultClean/Content/images/logo.png")
+
+    browser.driver.add_cookie({"name": "NOPCOMMERCE.AUTH", "value": authorization_cookie})
+
+    return browser
+
+
+@pytest.fixture(scope='session')
+def register1():
     browser.config.base_url = "https://demowebshop.tricentis.com/"
     browser.config.window_width = 1920
     browser.config.window_height = 1080
