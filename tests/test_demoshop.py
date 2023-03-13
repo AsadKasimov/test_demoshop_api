@@ -1,12 +1,12 @@
 import allure
 from utils.base_session import demoshop
-
+from models import helpers
 
 @allure.parent_suite('API')
 @allure.suite('Авторизация')
 @allure.title(f"Вход с помощью логин/пароля")
 def test_login():
-    response = demoshop.post('/login', data={'Email': 'test@qa.guru.com', 'Password': '123456'}, allow_redirects=False)
+    response = demoshop.post('/login', data=helpers.user_login(), allow_redirects=False)
     assert response.status_code == 302
 
 @allure.parent_suite('API')
