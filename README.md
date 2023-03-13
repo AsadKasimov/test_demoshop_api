@@ -66,7 +66,7 @@ INFO     root:base_session.py:37 302 curl -X GET -H 'Accept: */*' -H 'Accept-Enc
 
 ### <img width="3%" title="Allure TestOps" src="./resourses/icons/allure-ee-logo.svg"> Интеграция с Allure TestOps
 
-### [Dashboard](https://allure.autotests.cloud/project/2012/dashboardsv)
+### [Dashboard](https://allure.autotests.cloud/project/2015/dashboards)
 
 ##### Так же вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики.
 ![This is an image](resourses/icons/alluret1.png)
