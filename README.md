@@ -36,7 +36,7 @@
 
 ### <img width="3%" title="Jenkins" src="./resourses/icons/jenkins-logo.svg"> Запуск проекта в Jenkins
 
-### [Job](https://jenkins.autotests.cloud/job/003_python-edbeg1337-head-hunter-api/)
+#### [Job](https://jenkins.autotests.cloud/job/003_python-edbeg1337-head-hunter-api/)
 
 ##### При нажатии на "Собрать с параметрами" откроеться окно где надо выбрать тесты которые запустяться через виртуальную машину в Selenide.
 ![This is an image](resourses/icons/jenkins_job.png)
@@ -46,6 +46,7 @@
 <!-- Allure report -->
 
 ### <img width="3%" title="Allure Report" src="./resourses/icons/allure-Report-logo.svg"> Allure report
+#### [Отчет в Allure](https://jenkins.autotests.cloud/job/003_python-edbeg1337-head-hunter-api/7/allure/)
 
 ##### После прохождения тестов, результаты можно посмотреть в Allure отчете, где так же содержится ссылка на Jenkins
 ![This is an image](resourses/icons/allure1.png)
@@ -66,7 +67,7 @@ INFO     root:base_session.py:37 302 curl -X GET -H 'Accept: */*' -H 'Accept-Enc
 
 ### <img width="3%" title="Allure TestOps" src="./resourses/icons/allure-ee-logo.svg"> Интеграция с Allure TestOps
 
-### [Dashboard](https://allure.autotests.cloud/project/2015/dashboards)
+#### [Dashboard](https://allure.autotests.cloud/project/2015/dashboards)
 
 ##### Так же вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики.
 ![This is an image](resourses/icons/alluret1.png)
@@ -83,6 +84,8 @@ INFO     root:base_session.py:37 302 curl -X GET -H 'Accept: */*' -H 'Accept-Enc
 <!-- Jira -->
 
 ### <img width="3%" title="Jira" src="./resourses/icons/jira-logo.svg"> Интеграция с Jira
+#### [Задача в JIRA](https://jira.autotests.cloud/browse/HOMEWORK-592)
+
 ##### Настроив через Allure TestOps интеграцию с Jira, в тикет можно пробросить результат прохождение тестов и список тест-кейсов из Allure
 
 ![This is an image](resourses/icons/alluret3.png)
@@ -90,7 +93,7 @@ INFO     root:base_session.py:37 302 curl -X GET -H 'Accept: */*' -H 'Accept-Enc
 
 <!-- Telegram -->
 
-### <img width="3%" title="Telegram" src="./resourses/icons/Telegram.svg"> Интеграция с Telegram
+### <img width="4%" title="Telegram" src="./resourses/icons/Telegram.svg"> Интеграция с Telegram
 ##### После прохождения тестов, в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
 
 ![This is an image](resourses/icons/alluret4.png)
