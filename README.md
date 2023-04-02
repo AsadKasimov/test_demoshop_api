@@ -38,7 +38,7 @@
 
 #### [Job](https://jenkins.autotests.cloud/job/003_python-edbeg1337-head-hunter-api/)
 
-##### При нажатии на "Собрать с параметрами" откроеться окно где надо выбрать тесты которые запустяться через виртуальную машину в Selenide.
+##### При нажатии на "Собрать с параметрами" откроеться окно где надо выбрать тесты которые запустяться через виртуальную машину в Selenoid.
 ![This is an image](resourses/icons/jenkins_job.png)
 ![This is an image](resourses/icons/jenkins_job1.png)
 ![This is an image](resourses/icons/jenkins_job2.png)
